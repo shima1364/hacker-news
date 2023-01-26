@@ -28,7 +28,14 @@ function View() {
   }
   return (
     <div className="App">
-      <form className='search-form' onSubmit={getSearch}>
+      <form class="ui input focus" onSubmit={getSearch}>
+       <input type="text" value={search}
+        onChange={updateSearch}/>
+       <button class="ui blue button" type="submit">
+        <i class="search icon"></i>
+       </button>
+      </form>
+      {/* <form className='search-form' onSubmit={getSearch}>
         <input className="search-bar"
         type= "text"
         value={search}
@@ -36,7 +43,7 @@ function View() {
         />
         <button className="search-button" type="submit"
         >search</button>
-      </form>
+      </form> */}
      {loading === true ? (<LoadingSpinner/>) :
       (newses.map(news => (
         <News 

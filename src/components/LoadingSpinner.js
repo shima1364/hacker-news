@@ -15,7 +15,7 @@ import { ThreeDots } from "react-loader-spinner";
         height="80"
         width="80"
         radius="9"
-        color="#fd7e14"
+        color="#023047"
         ariaLabel="three-dots-loading"
         wrapperStyle={{}}
         wrapperClassName=""
